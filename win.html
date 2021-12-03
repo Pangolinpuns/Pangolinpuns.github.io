@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Win </title>
+<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+<script>
+function start(){
+sjs.open();
+
+var background = new sjs.Image("Images/win.png");
+background.setSize(sjs.getWidth(), sjs.getHeight());
+
+
+var win_text = new sjs.Text("Congratulations, You Won!",28,"blue");
+
+win_text.centerH();
+
+var startBtn = new sjs.Button("Play Again?", function(){
+window.location = "index.html";
+});
+
+startBtn.center();
+
+
+}
+</script>
+</head>
+<body onload="start()">
+<h1> You Win </h1>
+
+<div id="target" style="margin:auto;background:grey;"></div>
+</body>
+</html>
